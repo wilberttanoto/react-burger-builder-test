@@ -1,0 +1,35 @@
+.Toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: brown;
+  width: 100%;
+  box-sizing: border-box;
+  height: 56px;
+  z-index: 90;
+  padding: 0 20px;
+}
+
+.Toolbar nav {
+  height: 100%;
+}
+
+.Logo,
+.DrawerToggle {
+  height: 80%;
+}
+
+@media (max-width: 499px) {
+  .DesktopOnly {
+    display: none;
+  }
+}
+
+@media (min-width: 500px) {
+  .Menu {
+    display: none;
+  }
+}
